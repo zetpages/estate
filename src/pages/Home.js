@@ -23,7 +23,7 @@ const home = () => {
         </Banner>
       </Hero> */}
       <MainHero />
-      {/* <SearchContainer /> */}
+      <SearchContainer />
       {/* <RoomsContainer /> */}
       <Services />
       {/* <FeaturedRooms /> */}

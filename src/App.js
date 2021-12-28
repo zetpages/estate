@@ -11,7 +11,7 @@ import Error from "./pages/Error";
 
 import Navbar from "./components/Navbar";
 
-// import SortedR from './pages/SortedR';
+import SortedR from './pages/SortedR';
 
 import { Switch, Route } from "react-router-dom";
 
@@ -23,7 +23,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/rooms/" component={Rooms} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />
-//         {/* <Route path="/sorted-rooms/" component={SortedR} /> */}
+//         <Route path="/results-rooms/" component={SortedR} />
         <Route component={Error} />
       </Switch>
     </>

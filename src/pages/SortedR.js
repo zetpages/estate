@@ -1,11 +1,11 @@
-// import React from "react";
-// import RoomsContainer from "../components/RoomsContainer";
-// const Rooms = () => {
-//   return (
-//     <>
-//       <RoomsContainer />
-//     </>
-//   );
-// };
+import React from "react";
+import ResultsContainer from "../components/ResultsContainer";
+const SortedRooms = () => {
+    return (
+        <>
+            <ResultsContainer />
+        </>
+    );
+};
 
-// export default Rooms;
+export default SortedRooms;
