@@ -33,6 +33,7 @@ const RoomsFilter = ({ rooms }) => {
       {item}
     </option>
   ));
+  // console.log("asdfasdfasdf-----asdf");
   // get unique capacity
   let people = getUnique(rooms, "capacity");
   people = people.map((item, index) => (
@@ -70,6 +71,7 @@ const RoomsFilter = ({ rooms }) => {
           >
             {people}
           </select>
+
         </div>
         {/* end of guests */}
         {/* room price */}

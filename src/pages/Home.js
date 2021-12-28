@@ -4,10 +4,15 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
+import SlickSlider from "../components/SlickSlider";
+import MainHero from "../components/MainHero";
+import SearchContainer from "../components/SearchContainer";
+import RoomsContainer from "../components/RoomsContainer";
+
 const home = () => {
   return (
     <>
-      <Hero>
+      {/* <Hero>
         <Banner
           title="luxurious rooms"
           subtitle="deluxe rooms starting at $299"
@@ -16,9 +21,13 @@ const home = () => {
             our rooms
           </Link>
         </Banner>
-      </Hero>
+      </Hero> */}
+      <MainHero />
+      {/* <SearchContainer /> */}
+      {/* <RoomsContainer /> */}
       <Services />
-      <FeaturedRooms />
+      {/* <FeaturedRooms /> */}
+      <SlickSlider />
     </>
   );
 };
