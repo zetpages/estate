@@ -142,7 +142,12 @@ h6 {
 }
 
 .show-nav {
-  height: 300px;
+  height: 180px;
+  padding: 20px;
+}
+
+.custom_info.show-nav {
+  height: 100px;
 }
 
   /* .nav-center {
@@ -168,6 +173,7 @@ h6 {
   .nav-links {
     height: auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     /* margin-left: 4rem; */
   }
@@ -557,7 +563,7 @@ h6 {
 /* end of roomlist */
 /*  rooms fitler*/
 .filter-container {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 .filter-form {
   width: 60vw;
@@ -566,6 +572,8 @@ h6 {
   grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 40px;
+  background: rgba(0, 0, 0, 0.288);
+  padding: 1rem;
 }
 .form-group {
   text-transform: capitalize;
@@ -860,6 +868,57 @@ h6 {
 }
 
 .loc_city {
-  margin: 0px 30px;
+  margin-left: 30px;
+  margin-top: 10px;
   font-size: .8rem;
+}
+
+.nav_second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_location {
+  display: flex;
+  align-items: center;
+}
+
+
+
+@media  screen and (min-width: 768px) and (max-width: 1200px) {
+  .nav_second {
+    display: block;
+  }
+}
+
+@media  screen and (max-width: 767px) {
+  .nav_second {
+    display: block;
+  }
+
+  .custom_info {
+    /* text-align: center; */
+    margin-top: 20px !important;
+  }
+
+  .publish_modal,
+  .publish_phone {
+    margin: 10px auto;
+  }
+
+  .just_center {
+    text-align: center;
+  }
+
+  .publish_phone {
+    border-top: 1px solid #324E7B;
+  }
+}
+
+@media  screen and (max-width: 370px) {
+
+    .loc_city {
+      display: none;
+    }
 }
