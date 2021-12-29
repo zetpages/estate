@@ -1,15 +1,16 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-import image01 from "../images/room-10.jpeg";
-import image02 from "../images/room-11.jpeg";
-import image03 from "../images/room-12.jpeg";
+import image01 from "../images/main-3.jpg";
+import image02 from "../images/main-2.jpg";
+import image03 from "../images/main-1.jpg";
 
 function MainHero() {
   return (
     <div className="main-section">
       <Carousel interval={4000}>
         <Carousel.Item>
+          <div className="darck_back"></div>
           <img
             className="d-block w-100"
             src={image01}
@@ -21,6 +22,7 @@ function MainHero() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
+          <div className="darck_back"></div>
           <img
             className="d-block w-100"
             src={image02}
@@ -33,6 +35,7 @@ function MainHero() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
+          <div className="darck_back"></div>
           <img
             className="d-block w-100"
             src={image03}
