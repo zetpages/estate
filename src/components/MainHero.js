@@ -8,7 +8,12 @@ import image03 from "../images/main-1.jpg";
 function MainHero() {
   return (
     <div className="main-section">
-      <Carousel interval={4000}>
+      <Carousel
+        interval={5000}
+        indicators={false}
+        controls={false}
+        slide={true}
+      >
         <Carousel.Item>
           <div className="darck_back"></div>
           <img

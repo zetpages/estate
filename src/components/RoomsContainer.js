@@ -14,6 +14,8 @@ function RoomContainer({ context }) {
     <>
       <RoomsFilter rooms={rooms} />
       <RoomsList rooms={sortedRooms} />
+      {/* <RoomsList rooms={rooms} /> */}
+
 
       {/* <button className="search_btn">Показать {roomsFound} предложений</button> */}
     </>

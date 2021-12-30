@@ -19,7 +19,7 @@ export default class Responsive extends Component {
             infinite: true,
             loop: true,
             speed: 500,
-            slidesToShow: 3,
+            slidesToShow: 4,
             centerPadding: "20px",
             slidesToScroll: 1,
             initialSlide: 0,
@@ -56,7 +56,7 @@ export default class Responsive extends Component {
         return (
 
             <section className="slick-slides">
-                <h2> Responsive </h2>
+                <h2> Лучшие предложения </h2>
                 <Slider {...settings}>
                     {loading ? <Loading /> : rooms}
                     {/* <div className="box">

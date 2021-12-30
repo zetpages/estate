@@ -11,7 +11,7 @@ import RoomsContainer from "../components/RoomsContainer";
 
 const home = () => {
   return (
-    <>
+    <div className="custom_wrapper">
       {/* <Hero>
         <Banner
           title="luxurious rooms"
@@ -25,10 +25,10 @@ const home = () => {
       <MainHero />
       <SearchContainer />
       {/* <RoomsContainer /> */}
-      <Services />
       {/* <FeaturedRooms /> */}
       <SlickSlider />
-    </>
+      <Services />
+    </div>
   );
 };
 

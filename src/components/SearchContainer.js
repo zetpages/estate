@@ -7,17 +7,23 @@ import RoomsList from "./RoomsList";
 
 function SearchContainer({ context }) {
     const { loading, sortedRooms, rooms } = context;
+
     const roomsFound = Object.keys(sortedRooms).length;
     console.log(sortedRooms);
+
     if (loading) {
         return <Loading />;
     }
     return (
-        <>
-            <RoomsFilter rooms={rooms} />
-            <Link to="/results-rooms">Показать {roomsFound} предложений</Link>
-            <RoomsList rooms={sortedRooms} />
-        </>
+        <div className="search_container">
+            <div className="filter_parent">
+                <RoomsFilter rooms={rooms} />
+                <div className="search_link">
+                    <Link className="search_a" to="/results-rooms">Показать {roomsFound} вариантов</Link>
+                </div>
+            </div>
+            {/* <RoomsList rooms={sortedRooms} /> */}
+        </div>
     );
 }
 
@@ -44,5 +50,6 @@ export default withRoomConsumer(SearchContainer);
 //         </>
 //     );
 // }
+
 
 // export default withRoomConsumer(RoomContainer);
