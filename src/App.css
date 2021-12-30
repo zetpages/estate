@@ -440,9 +440,10 @@ h6 {
   transform: scale(0);
   transition: all 0.3s linear;
 }
-/* .img-container:hover {
-  background: #000000d3;
-}
+ /* .img_parent:hover {
+  background: #000000;
+} */
+/*
 .img-container:hover img {
   opacity: 1;
 } */
