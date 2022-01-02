@@ -887,14 +887,14 @@ h6 {
 
 /* loader end! */
 
-.fade {
-    opacity: 0;
-    z-index: 1;
+.fade-enter {
+    opacity: 0 !important;
+    z-index: 1 !important;
 }
 
-.fade.fade-active {
-    opacity: 1;
-    transition: opacity 250ms ease-in;
+.fade-enter.fade-enter-active {
+    opacity: 1 !important;
+    transition: opacity 250ms ease-in !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -1207,6 +1207,7 @@ h6 {
 .room_content {
     width: 100%;
     padding: 10px;
+    text-align: left;
 }
 
 .room_content p {
