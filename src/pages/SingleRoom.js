@@ -42,8 +42,8 @@
 //       size,
 //       price,
 //       extras,
-//       breakfast,
-//       pets,
+//       parking,
+//       playground,
 //       images
 //     } = room;
 //     const [main, ...defaultImages] = images;
@@ -77,8 +77,8 @@
 //                 max capacity :
 //                 {capacity > 1 ? `${capacity} people` : `${capacity} person`}
 //               </h6>
-//               <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
-//               <h6>{breakfast && "free breakfast included"}</h6>
+//               <h6>{playground ? "playground allowed" : "no playground allowed"}</h6>
+//               <h6>{parking && "free parking included"}</h6>
 //             </article>
 //           </div>
 //         </section>
@@ -145,8 +145,8 @@ export default class SingleRoom extends Component {
       size,
       price,
       extras,
-      breakfast,
-      pets,
+      parking,
+      playground,
       images
     } = room;
     const [main, ...defaultImages] = images;
@@ -176,8 +176,8 @@ export default class SingleRoom extends Component {
                 max capacity :
                 {capacity > 1 ? `${capacity} people` : `${capacity} person`}
               </h6>
-              <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
-              <h6>{breakfast && "free breakfast included"}</h6>
+              <h6>{playground ? "playground allowed" : "no playground allowed"}</h6>
+              <h6>{parking && "free parking included"}</h6>
             </article>
           </div>
         </section>
@@ -189,7 +189,7 @@ export default class SingleRoom extends Component {
             ))}
           </ul>
         </section>
-        <SlickSlider />
+        {/* <SlickSlider /> */}
       </>
     );
   }

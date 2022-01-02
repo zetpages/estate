@@ -20,8 +20,8 @@ const RoomsFilter = ({ rooms }) => {
     maxPrice,
     minSize,
     maxSize,
-    breakfast,
-    pets
+    parking,
+    playground
   } = context;
 
   // get unique types
@@ -115,27 +115,28 @@ const RoomsFilter = ({ rooms }) => {
             />
           </div>
         </div>
+        
         {/* end of select type */}
         {/* extras */}
         <div className="form-group">
           <div className="single-extra">
             <input
               type="checkbox"
-              name="breakfast"
-              id="breakfast"
-              checked={breakfast}
+              name="parking"
+              id="parking"
+              checked={parking}
               onChange={handleChange}
             />
-            <label htmlFor="breakfast">Фичи</label>
+            <label htmlFor="parking">Парковка</label>
           </div>
           <div className="single-extra">
             <input
               type="checkbox"
-              name="pets"
-              checked={pets}
+              name="playground"
+              checked={playground}
               onChange={handleChange}
             />
-            <label htmlFor="breakfast">Мичи</label>
+            <label htmlFor="playground">Площадка</label>
           </div>
         </div>
         {/* end of extras type */}
