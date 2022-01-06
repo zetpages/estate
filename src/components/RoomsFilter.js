@@ -1,8 +1,8 @@
 import React from "react";
 import { useContext } from "react";
 import { RoomContext } from "../context";
-import { Link } from "react-router-dom";
-import Title from "./Title";
+// import { Link } from "react-router-dom";
+// import Title from "./Title";
 // get all unique values
 const getUnique = (items, value) => {
   return [...new Set(items.map(item => item[value]))];

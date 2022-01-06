@@ -12,7 +12,7 @@
 // export default Loading;
 
 import React from "react";
-import loadingGif from "../images/gif/loading-arrow.gif";
+// import loadingGif from "../images/gif/loading-arrow.gif";
 const Loading = () => {
   return (
     <div id="preloader">

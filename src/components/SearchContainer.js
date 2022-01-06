@@ -3,13 +3,13 @@ import { withRoomConsumer } from "../context";
 import Loading from "./Loading";
 import RoomsFilter from "./RoomsFilter";
 import { Link } from 'react-router-dom';
-import RoomsList from "./RoomsList";
+// import RoomsList from "./RoomsList";
 
 function SearchContainer({ context }) {
     const { loading, sortedRooms, rooms } = context;
 
     const roomsFound = Object.keys(sortedRooms).length;
-    console.log(sortedRooms);
+    // console.log(sortedRooms);
 
     if (loading) {
         return <Loading />;
@@ -19,7 +19,7 @@ function SearchContainer({ context }) {
             <div className="filter_parent">
                 <RoomsFilter rooms={rooms} />
                 <div className="search_link">
-                    <Link className="search_a" to="/results-rooms">Показать {roomsFound} вариантов</Link>
+                    <Link className="search_a" to="/rooms">Показать {roomsFound} вариантов</Link>
                 </div>
             </div>
             {/* <RoomsList rooms={sortedRooms} /> */}

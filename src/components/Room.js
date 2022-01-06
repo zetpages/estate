@@ -1,60 +1,6 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import defaultImg from "../images/room-1.jpeg";
-// import PropTypes from "prop-types";
-// import { memo } from "react";
-// import Carousel from "react-bootstrap/Carousel";
-
-// const Room = memo(({ room }) => {
-//   const { name, slug, images, price, size, address, id } = room;
-//   const [...listImages] = images;
-//   const square = price / size;
-
-//   // console.log(name);
-//   return (
-//     <article className="room">
-//       <div className="img-container">
-//         <Carousel interval={null}>
-//           {listImages.map((item, index) => (
-//             <Carousel.Item key={index}>
-//               <img src={item} alt={name} />
-//             </Carousel.Item>
-//           ))}
-//         </Carousel>
-//         <div className="price-top">
-//           <h6>${price}</h6>
-//           <p>per night</p>
-//         </div>
-//         <Link to={`/rooms/${slug}`} className="btn-primary room-link">
-//           features
-//         </Link>
-//       </div>
-//       <p className="room-info">{name}</p>
-//       <p>{price}$</p>
-//       <p>{size} площадь</p>
-//       <p>{square.toFixed(1)}$ за м.кв</p>
-//       <p>{address}</p>
-//     </article>
-//   );
-// });
-
-// Room.propTypes = {
-//   room: PropTypes.shape({
-//     name: PropTypes.string.isRequired,
-//     slug: PropTypes.string.isRequired,
-//     images: PropTypes.arrayOf(PropTypes.string).isRequired,
-//     price: PropTypes.number.isRequired
-//   })
-// };
-// export default Room;
-
-
-
-
-
 import React from "react";
 import { Link } from "react-router-dom";
-import defaultImg from "../images/room-1.jpeg";
+// import defaultImg from "../images/room-1.jpeg";
 import PropTypes from "prop-types";
 import { memo } from "react";
 import Carousel from "react-bootstrap/Carousel";
@@ -65,7 +11,7 @@ const Room = memo(({ room }) => {
   const { slug, images, price, size, address, capacity, type, storeys, parking, playground} = room;
   const [...listImages] = images;
   const square = price / size;
-  console.log(slug + " " + price + " " + size + " " + address + " " + capacity + " " + type + " " + storeys + " " +parking + " " + playground);
+  // console.log(slug + " " + price + " " + size + " " + address + " " + capacity + " " + type + " " + storeys + " " +parking + " " + playground);
 
   return (
     <article className="room">
@@ -86,12 +32,12 @@ const Room = memo(({ room }) => {
           </div>
         </div>
         <div className="room_content">
-          <p>{price}$</p>
+          <p className="room_price">{price}$</p>
           <div className="parking_playground">
-            <p>{square.toFixed(1)}$ за м.кв <FaCouch /> <FaParking /></p>
+            <p className="room_price_square">{square.toFixed(1)}$ за м.кв {playground ? <FaCouch /> : ''} {parking ? <FaParking /> : ''}</p>
           </div>
           <p className="small_info">{capacity} - комн.{type} | {size} кв.м | {storeys} эт.</p>
-          <p className="room-info">{address}</p>
+          <p className="room_address">{address}</p>
           <div className="bottom_agent">
             <div className="agent_left">
               <div className="agent_img">
@@ -116,7 +62,9 @@ Room.propTypes = {
     // name: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
-    price: PropTypes.number.isRequired
+    price: PropTypes.number.isRequired,
+    parking: PropTypes.bool.isRequired,
+    playground: PropTypes.bool.isRequired
   })
 };
 export default Room;

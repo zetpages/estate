@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
-import { FaAlignRight, FaInfinity, FaPhone, FaPlus, FaMapMarkerAlt } from "react-icons/fa";
+// import { Button } from "react-bootstrap";
+import { FaAlignRight, FaInfinity, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import logo from "../images/logo.svg";
 import ModalF from "./ModalF";
 

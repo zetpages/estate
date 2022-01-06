@@ -99,15 +99,15 @@
 
 
 import React, { Component } from "react";
-import reactDom from "react-dom";
+// import reactDom from "react-dom";
 import { Carousel } from "react-responsive-carousel";
 import defaultBcg from "../images/room-1.jpeg";
-import Hero from "../components/Hero";
-import Banner from "../components/Banner";
-import { Link } from "react-router-dom";
+// import Hero from "../components/Hero";
+// import Banner from "../components/Banner";
+// import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
-import SlickSlider from "../components/SlickSlider";
-import LoadingImage from "../images/gif/loading-arrow.gif"
+// import SlickSlider from "../components/SlickSlider";
+// import LoadingImage from "../images/gif/loading-arrow.gif"
 import Loading from "../components/Loading";
 
 export default class SingleRoom extends Component {
@@ -149,7 +149,8 @@ export default class SingleRoom extends Component {
       playground,
       images
     } = room;
-    const [main, ...defaultImages] = images;
+    // const [main, ...defaultImages] = images;
+    const [...defaultImages] = images;
     console.log(defaultImages);
     console.log("1111111111111asdddddddddddddddddddddddddddddddddsssssssssssssssssswwwwwwwwwwwwwwwwwwwwwddddddddddddddddd");
 

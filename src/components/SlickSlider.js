@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Title from "./Title";
+// import Title from "./Title";
 import { RoomContext } from "../context";
 import Room from "./Room";
 import Loading from "./Loading";
