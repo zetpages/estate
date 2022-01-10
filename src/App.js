@@ -10,6 +10,7 @@ import Rooms from "./pages/Rooms";
 import SingleRoom from "./pages/SingleRoom";
 import Error from "./pages/Error";
 import About from "./pages/About";
+import Sell from "./pages/Sell";
 
 import Navbar from "./components/Navbar";
 
@@ -32,6 +33,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/rooms/" component={Rooms} />
             <Route exact path="/about/" component={About} />
+            <Route exact path="/sell/" component={Sell} />
             <Route exact path="/rooms/:slug" component={SingleRoom} />
             <Route exact path="/results-rooms/" component={SortedR} />
             <Route component={Error} />

@@ -6,7 +6,7 @@ export default function About() {
         <>
             <Navbar />
             <div className="main_w">
-                <h1 className='mt-4'>Страница о компании</h1>
+                <h1 className='mt-4'>Страница продать</h1>
             </div>
         </>
     )
