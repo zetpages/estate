@@ -1,7 +1,7 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import Hero from "../components/Hero";
-// import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
 import Services from "../components/Services";
 // import FeaturedRooms from "../components/FeaturedRooms";
 import SlickSlider from "../components/SlickSlider";
@@ -79,7 +79,7 @@ const home = () => {
               </div>
             </div>
 
-            <div className="adv_to_right">
+            <div className="adv_to_right"> 
               <div className="adv_card">
                 <div className="card_img">
                   <img src={Secure} alt="security" />
